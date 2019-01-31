@@ -1,0 +1,14 @@
+TCLChecker - add TCL checking to Flycheck
+
+Put this file anywhere in your load path, then set it up:
+
+    (load "tclchecker")
+		(with-eval-after-load 'flycheck
+		   (flycheck-tcl-setup))
+		(add-hook 'tcl-mode-hook 'flycheck-mode)
+
+Copyright 2019 Jade Michael Thornton
+Copyright 2014-2016 Niels Widger
+
+TCLChecker is covered under the terms of the MIT License. See <tclchecker.el>
+for the full license text.
